@@ -1,22 +1,35 @@
 $font-stack:    Helvetica, sans-serif;
 $primary-background-color: #fff;
+$secondary-background-color: #ecf0ea;
 
 
 .stockHeader {
-  height: 30px;
-  background: #000;
-  margin-bottom: 10%;
+  height: 10em;
   color: #fff;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.stockHeader > p {
+  height: 3em;
+  background: #D8DED4;
+  word-wrap: break-word;
+  width: 30%;
+  margin: 0 auto;
+  color: #000;
 }
 
 .celHeader {
   color: #000;
-  font-weight:bold;
+  font-weight: bold;
+  line-height: 30px;
   text-shadow: 2px 0 #000;
   letter-spacing: 3px;
   margin-top: 0px;
-  padding-bottom: 5px;
-  border-bottom: 3px solid #000;
+  width: 100%;
+  font-size: 30px;
+  align-self: end;
 }
 
 .heroHeader {
@@ -28,13 +41,28 @@ $primary-background-color: #fff;
 
 .hero {
   position: relative;
-  background: $primary-background-color;
+  background: $secondary-background-color;
   text-align: center;
 }
 .heroContent {
 
   background: $primary-background-color;
 }
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+
+
 .heroImage {
   /*
     Ensure golden ratio for the hero size while limiting it to some extend to
@@ -78,11 +106,26 @@ $primary-background-color: #fff;
   padding: 0 0.5em;
 }
 
-.heroButton {
+.purchaseButton {
   background-color: #E56142;
   border-radius: 10px;
   color: white;
-  padding: 8px 100px;
+  // padding: 8px 100px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.subscribeButton {
+  background-color: #E56142;
+  border-radius: 10px;
+  color: white;
+  // padding: 8px 100px;
+  width: 100%;
   text-align: center;
   text-decoration: none;
   display: block;
