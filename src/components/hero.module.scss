@@ -43,7 +43,7 @@ $primary-background-color: #fff;
   height: 61.8vh;
   max-height: 400px;
   // display:inline-block;
-  width: 80%;
+  width: 70%;
   margin-left: 10%;
     // float: left;
 }
@@ -56,6 +56,7 @@ $primary-background-color: #fff;
 .heroFloatRight {
   width: 40%; 
   float:right;
+  margin-top: 50px;
 }
 
 .heroList {
@@ -64,11 +65,7 @@ $primary-background-color: #fff;
   list-style-image: url('/images/globe.svg');
   display: table-cell;
   text-align: left;
-}
-
-li {
-  font-weight: bold;
-  text-align: left;
+  padding-right: 25%;
 }
 
 .heroDetails {
@@ -79,6 +76,19 @@ li {
   transform: translate(-50%, 0);
   font-size: 14px;
   padding: 0 0.5em;
+}
+
+.heroButton {
+  background-color: #E56142;
+  border-radius: 10px;
+  color: white;
+  padding: 8px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 @media(min-width: 600px) {

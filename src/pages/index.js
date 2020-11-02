@@ -77,6 +77,7 @@ export const pageQuery = graphql`
           purchaseDiscount
           purchasePrice
           stockCount
+          shopButton
         }
       }
     }

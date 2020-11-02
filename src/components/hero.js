@@ -19,7 +19,7 @@ export default ({ data }) => (
         <ul className={styles.heroList}>
           <li>Utilizes Plant Stem Cell Technology To Give You Thicker Looking, Stronger Hair</li>
           <li>Contains Nutrient-Rich Ingredients Like Advanced Aginine Extract</li>
-          <li>ontains Hair Nourashing Proteins That Contribute To Healthy, Thicker Looking Hair</li>
+          <li>Contains Hair Nourashing Proteins That Contribute To Healthy, Thicker Looking Hair</li>
           <li>Includes 90 Day 100% Money Back Guarantee</li>
             {/* {data.heroBodyList.content.map(({ content }) => {
               return (
@@ -28,8 +28,8 @@ export default ({ data }) => (
               )
             })} */}
         </ul>
-        <button className={styles.heroButton}>This is a button</button>
       </div>
+        <button className={styles.heroButton}>{data.shopButton}</button>
 
     {/* <div className={styles.heroDetails}>
       <h3 className={styles.heroHeadline}>{data.name}</h3>
