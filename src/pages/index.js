@@ -80,6 +80,8 @@ export const pageQuery = graphql`
           heroSubscribeButtonText
           purchaseDiscount
           purchasePrice
+          subscribeDiscount
+          subscribePrice
           stockCount
           shopButton
         }

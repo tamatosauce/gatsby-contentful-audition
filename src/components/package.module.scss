@@ -4,33 +4,41 @@ $secondary-background-color: #ecf0ea;
 
 
 .stockHeader {
-  height: 12em;
+  /* height: 12em; */
   color: #fff;
   display: flex;
-  align-items: center;
+  align-content: center;
   flex-wrap: wrap;
+  padding-top: 20px;
+  letter-spacing: 2px;
 }
 
-.stockHeader > p {
-  height: 3em;
-  background: #D8DED4;
+.stockHeader > div {
+  /* height: 3em; */
   word-wrap: break-word;
-  width: 30%;
+  width: 50%;
   margin: 0 auto;
   color: #000;
   font-size: 16px;
+  padding: 10px;
+  background: #D8DED4;
 }
 
-.celHeader {
-  color: #000;
+.stockHeader > div:first-child {
+  background: unset;
   font-weight: bold;
-  line-height: 30px;
-  text-shadow: 2px 0 #000;
-  letter-spacing: 3px;
-  margin-top: 0px;
-  width: 100%;
-  font-size: 30px;
-  align-self: end;
+  font-size: 1.8em;
+  width: 50%;
+}
+
+.celBlock {
+  width: 42%;
+  margin-bottom: 40px;
+  font-size: 1vw;
+  line-height: 1.5em;
+  display: inline-table;
+  background: #D8DED4;
+  padding: 20px;
 }
 
 .heroHeader {
@@ -46,32 +54,54 @@ $secondary-background-color: #ecf0ea;
   text-align: center;
   height: 45em;
 }
+
+@media screen and (max-width: 600px) {
+  .hero {
+    position: relative;
+    background: $secondary-background-color;
+    text-align: center;
+    height: 80em;
+  }
+}
+
 .heroContent {
   background: $primary-background-color;
 }
 
 .card-row {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
+  background: $secondary-background-color; */
+  display: flex;
+  justify-content: space-evenly;
   background: $secondary-background-color;
+  flex-wrap: wrap;
+  height: 400px;
+  align-items: baseline;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 200px;
-  margin: auto;
+  /* margin: auto; */
   text-align: center;
   font-family: arial;
   background: $primary-background-color;
   padding: 10px;
+  margin: 10px 0;
+  height: 82%;
+  border-radius: 5px;
 }
 
 .selectedCard {
-  box-shadow: 0px 2px 4px 5px #012c0b;
+  box-shadow: 1px 2px 2px 3px #22462d69;
   max-width: 200px;
   text-align: center;
   font-family: arial;
   background: $primary-background-color;
-  padding: 10px;
+  padding: 0 10px 10px 10px;
+  height: 90%;
+  border-radius: 5px;
+  border: 2px solid #37523F;
 }
 
 .card h5 {
@@ -80,7 +110,7 @@ $secondary-background-color: #ecf0ea;
 
 .card p {
   margin: 0;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .payImage {
@@ -91,7 +121,6 @@ $secondary-background-color: #ecf0ea;
   max-height: 100px;
   display:inline-block;
   width: 20%;
-  padding-top: 2%;
 }
 
 .heroImage {
@@ -139,42 +168,43 @@ $secondary-background-color: #ecf0ea;
   background-color: #E56142;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  padding: 4px;
+  padding: 7px 11px;
   color: white;
-  text-align: center;
+  /* text-align: center; */
   text-decoration: none;
   font-size: 12px;
   font-weight: bold;
-  margin-left: 2px;
+  /* margin-left: 2px; */
   cursor: pointer;
   display: inline;
   border-right: 1px solid #fff;
-
+  width: 180px;
 }
 
 .subscribeButton {
   background-color: #fff;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  padding: 4px;
+  padding: 7px 11px;
   color: #E56142;
-  text-align: center;
   text-decoration: none;
   font-size: 12px;
   font-weight: bold;
-  margin-right: 1px;
-  margin-left: 2px;
+  /* margin-right: 1px; */
+  /* margin-left: 2px; */
   cursor: pointer;
   display: inline;
   border: 1px solid #E56142;
   border-right: 2px solid #E56142;
+  width: 180px;
+
 }
 
 .purchasePrice {
   background-color: #E56142;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  padding: 4px;
+  padding: 7px 15px;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -190,7 +220,7 @@ $secondary-background-color: #ecf0ea;
   background-color: #fff;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  padding: 4px;
+  padding: 7px 15px;
   color: #E56142;
   text-align: center;
   text-decoration: none;
@@ -222,5 +252,109 @@ $secondary-background-color: #ecf0ea;
 .heroTitle {
   margin: 0;
   font-size: 1.125em;
+  font-weight: bold;
+}
+
+.cardTick{
+  float: left;
+  width: 20px;
+}
+.cardLeft {
+  text-align: left;
+  padding-left: 25px;
+  padding-bottom: 10px;
+}
+
+.selectedCardLeft {
+  text-align: left;
+  padding-left: 25px;
+  margin: 0.2em;
+  font-size: 14px;
+}
+
+.splitGroup {
+  position: relative;
+  float: left;
+  margin-top: 10px;
+  margin-left: 15px;
+  display: inline-block;
+  height: 24px;
+}
+
+.subscribeSplitBtnLeft {
+  position: relative;
+  float: left;
+  height: 28px;
+  vertical-align: middle;
+  font-family: Tahoma;
+  font-size: 12px;
+  color: #fff;
+  background-color: #E56142;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid #E56142;
+  border-right: 2px solid #fff;
+  cursor: pointer;
+
+  /* background-image: -webkit-linear-gradient(90deg, #ccc, #fff); */
+}
+
+.subscribeSplitBtnRight{
+  position: relative;
+  float: left;
+  height: 28px;
+  vertical-align: middle;
+  font-family: Tahoma;
+  font-size: 12px;
+  background-color: #E56142;
+  color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid #E56142;
+  cursor: pointer;
+
+  /* background-image: -webkit-linear-gradient(90deg, #ccc, #fff); */
+}
+
+.purchaseSplitBtnLeft {
+  position: relative;
+  float: left;
+  height: 28px;
+  vertical-align: middle;
+  font-family: Tahoma;
+  font-size: 12px;
+  background-color: #fff;
+  color: #E56142;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid #E56142;
+  cursor: pointer;
+  width: 125px;
+
+  /* background-image: -webkit-linear-gradient(90deg, #ccc, #fff); */
+}
+
+.purchaseSplitBtnRight{
+  position: relative;
+  float: left;
+  height: 28px;
+  vertical-align: middle;
+  font-family: Tahoma;
+  font-size: 12px;
+  background-color: #fff;
+  color: #E56142;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid #E56142;
+  cursor: pointer;
+
+  /* background-image: -webkit-linear-gradient(90deg, #ccc, #fff); */
+}
+
+.splitDrop {
+  border: 0;
+  -webkit-appearance: button;
+  font-size: 10px;
+  text-align: left;
   font-weight: bold;
 }
