@@ -1,0 +1,104 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-background-color: #fff;
+
+
+.stockHeader {
+  height: 30px;
+  background: #000;
+  margin-bottom: 10%;
+  color: #fff;
+}
+
+.celHeader {
+  color: #000;
+  font-weight:bold;
+  text-shadow: 2px 0 #000;
+  letter-spacing: 3px;
+  margin-top: 0px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #000;
+}
+
+.heroHeader {
+  height: 0px;
+  color: #000;
+  padding-top: 2%;
+  margin-bottom: 10%;
+}
+
+.hero {
+  position: relative;
+  background: $primary-background-color;
+  text-align: center;
+}
+.heroContent {
+
+  background: $primary-background-color;
+}
+.heroImage {
+  /*
+    Ensure golden ratio for the hero size while limiting it to some extend to
+    the viewport width
+  */
+  height: 61.8vh;
+  max-height: 400px;
+  // display:inline-block;
+  width: 80%;
+  margin-left: 10%;
+    // float: left;
+}
+
+.heroFloatLeft {
+  width: 60%; 
+  float:left;
+}
+
+.heroFloatRight {
+  width: 40%; 
+  float:right;
+}
+
+.heroList {
+  margin: 0;
+  padding: 0;
+  list-style-image: url('/images/globe.svg');
+  display: table-cell;
+  text-align: left;
+}
+
+li {
+  font-weight: bold;
+  text-align: left;
+}
+
+.heroDetails {
+  position: absolute;
+  background: $primary-background-color;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  font-size: 14px;
+  padding: 0 0.5em;
+}
+
+@media(min-width: 600px) {
+  .heroDetails {
+    font-size: 16px;
+  }
+}
+
+@media(min-width: 1000px) {
+  .heroDetails {
+    font-size: 20px;
+  }
+}
+
+.heroHeadline {
+  margin: 0;
+}
+
+.heroTitle {
+  margin: 0;
+  font-size: 1.125em;
+  font-weight: bold;
+}
