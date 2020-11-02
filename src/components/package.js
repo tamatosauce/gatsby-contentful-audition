@@ -12,29 +12,38 @@ export default ({ data }) => (
 
     <div className={styles.cardRow}>
       <div className={styles.card}>
-        <img src={"../../images/hero.png"} alt="hero image"/>
+        <img src={"../../images/product.png"} alt="hero image"/>
         <h5>2x Hair Stimulation Pack</h5>
-        <p>2 Shampoos + 2 Free Conitioners</p>
+        <p>2 Shampoos + 2 Free Conditioners</p>
         <p>Free US Shipping</p>
-        <button className={styles.purchaseButton}>{data.shopButton}</button>
-        <button className={styles.subscribeButton}>{data.shopButton}</button>
+        <p className={styles.purchaseButton}>{data.heroSubscribeButtonText}</p>
+        <p className={styles.purchasePrice}>dsfd</p> <br></br>
+        <p className={styles.subscribeButton}>{data.heroSubscribeButtonText}</p>
+        <p className={styles.subscribePrice}>dsfd</p>
+      </div>
+      <div className={styles.selectedCard}>
+        <img src={"../../images/product.png"} alt="hero image"/>
+        <h5>2x Hair Stimulation Pack</h5>
+        <p>2 Shampoos + 2 Free Conditioners</p>
+        <p>Free US Shipping</p>
+        <p className={styles.purchaseButton}>{data.heroSubscribeButtonText}</p>
+        <p className={styles.purchasePrice}>dsfd</p> <br></br>
+        <p className={styles.subscribeButton}>{data.heroSubscribeButtonText}</p>
+        <p className={styles.subscribePrice}>dsfd</p>
       </div>
       <div className={styles.card}>
-        <img src={"../../images/hero.png"} alt="hero image"/>
+        <img src={"../../images/product.png"} alt="hero image"/>
         <h5>2x Hair Stimulation Pack</h5>
-        <p>2 Shampoos + 2 Free Conitioners</p>
+        <p>2 Shampoos + 2 Free Conditioners</p>
         <p>Free US Shipping</p>
-        <button className={styles.purchaseButton}>{data.shopButton}</button>
-        <button className={styles.subscribeButton}>{data.shopButton}</button>
+        <p className={styles.purchaseButton}>{data.heroSubscribeButtonText}</p>
+        <p className={styles.purchasePrice}>dsfd</p> <br></br>
+        <p className={styles.subscribeButton}>{data.heroSubscribeButtonText}</p>
+        <p className={styles.subscribePrice}>dsfd</p>
       </div>
-      <div className={styles.card}>
-        <img src={"../../images/hero.png"} alt="hero image"/>
-        <h5>2x Hair Stimulation Pack</h5>
-        <p>2 Shampoos + 2 Free Conitioners</p>
-        <p>Free US Shipping</p>
-        <button className={styles.purchaseButton}>{data.shopButton}</button>
-        <button className={styles.subscribeButton}>{data.shopButton}</button>
-      </div>
+    </div>
+    <div className={styles.payImage}>
+      <img src={"../../images/pay.png"} alt="hero image"/>
     </div>
 
     {/* <div className={styles.heroDetails}>

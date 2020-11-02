@@ -30,22 +30,17 @@ $primary-background-color: #fff;
   position: relative;
   background: $primary-background-color;
   text-align: center;
+  height: 45em;
 }
 .heroContent {
 
   background: $primary-background-color;
 }
 .heroImage {
-  /*
-    Ensure golden ratio for the hero size while limiting it to some extend to
-    the viewport width
-  */
   height: 61.8vh;
   max-height: 400px;
-  // display:inline-block;
   width: 70%;
-  margin-left: 10%;
-    // float: left;
+  margin-left: 20%;
 }
 
 .heroFloatLeft {
@@ -55,17 +50,23 @@ $primary-background-color: #fff;
 
 .heroFloatRight {
   width: 45%; 
-  float:right;
+  float:left;
   margin-top: 50px;
 }
 
 .heroList {
-  margin: 0;
-  list-style-image: url('/images/globe.svg');
-  display: table-cell;
-  text-align: left;
-  padding-right: 25%;
-  padding-bottom: 5%;
+  width: 80%;
+  height: 20em;
+  padding-left: 0px;
+}
+
+.heroList li {
+  background: url('/images/globe.svg') no-repeat 7px 7px transparent;
+    list-style-type: none;
+    margin: 0;
+    padding: 12px 0px 23px 60px;
+    text-align: left;
+    font-weight: bold;
 }
 
 .heroDetails {
@@ -87,7 +88,7 @@ $primary-background-color: #fff;
   text-decoration: none;
   display: block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 4px 55px;
   cursor: pointer;
 }
 

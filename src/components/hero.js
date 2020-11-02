@@ -28,8 +28,8 @@ export default ({ data }) => (
               )
             })} */}
         </ul>
-      </div>
         <button className={styles.heroButton}>{data.shopButton}</button>
+      </div>
 
     {/* <div className={styles.heroDetails}>
       <h3 className={styles.heroHeadline}>{data.name}</h3>

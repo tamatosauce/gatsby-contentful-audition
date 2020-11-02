@@ -4,7 +4,7 @@ $secondary-background-color: #ecf0ea;
 
 
 .stockHeader {
-  height: 10em;
+  height: 12em;
   color: #fff;
   display: flex;
   align-items: center;
@@ -18,6 +18,7 @@ $secondary-background-color: #ecf0ea;
   width: 30%;
   margin: 0 auto;
   color: #000;
+  font-size: 16px;
 }
 
 .celHeader {
@@ -43,15 +44,16 @@ $secondary-background-color: #ecf0ea;
   position: relative;
   background: $secondary-background-color;
   text-align: center;
+  height: 45em;
 }
 .heroContent {
-
   background: $primary-background-color;
 }
 
 .card-row {
   display: flex;
   justify-content: space-between;
+  background: $secondary-background-color;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -59,9 +61,38 @@ $secondary-background-color: #ecf0ea;
   margin: auto;
   text-align: center;
   font-family: arial;
+  background: $primary-background-color;
+  padding: 10px;
 }
 
+.selectedCard {
+  box-shadow: 0px 2px 4px 5px #012c0b;
+  max-width: 200px;
+  text-align: center;
+  font-family: arial;
+  background: $primary-background-color;
+  padding: 10px;
+}
 
+.card h5 {
+  margin: 0;
+}
+
+.card p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.payImage {
+  /*
+    Ensure golden ratio for the hero size while limiting it to some extend to
+    the viewport width
+  */
+  max-height: 100px;
+  display:inline-block;
+  width: 20%;
+  padding-top: 2%;
+}
 
 .heroImage {
   /*
@@ -70,10 +101,8 @@ $secondary-background-color: #ecf0ea;
   */
   height: 61.8vh;
   max-height: 400px;
-  // display:inline-block;
   width: 70%;
   margin-left: 10%;
-    // float: left;
 }
 
 .heroFloatLeft {
@@ -108,30 +137,70 @@ $secondary-background-color: #ecf0ea;
 
 .purchaseButton {
   background-color: #E56142;
-  border-radius: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 4px;
   color: white;
-  // padding: 8px 100px;
-  width: 100%;
   text-align: center;
   text-decoration: none;
-  display: block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 2px;
   cursor: pointer;
+  display: inline;
+  border-right: 1px solid #fff;
+
 }
 
 .subscribeButton {
-  background-color: #E56142;
-  border-radius: 10px;
-  color: white;
-  // padding: 8px 100px;
-  width: 100%;
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 4px;
+  color: #E56142;
   text-align: center;
   text-decoration: none;
-  display: block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 1px;
+  margin-left: 2px;
   cursor: pointer;
+  display: inline;
+  border: 1px solid #E56142;
+  border-right: 2px solid #E56142;
+}
+
+.purchasePrice {
+  background-color: #E56142;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 4px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 2px;
+  cursor: pointer;
+  border-left: 1px solid #fff;
+}
+
+.subscribePrice {
+  background-color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 4px;
+  color: #E56142;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 2px;
+  cursor: pointer;
+  border: 1px solid #E56142;
+  border-left: 0;
 }
 
 @media(min-width: 600px) {
